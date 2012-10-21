@@ -103,6 +103,7 @@ endif
 ifeq (pa_n7000,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_n7000.mk
 endif
+<<<<<<< HEAD
 ifeq (pa_rk2918,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_rk2918.mk
 endif
@@ -111,4 +112,8 @@ ifeq (pa_galaxysl,$(TARGET_PRODUCT))
 endif
 ifeq (pa_pascal2,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_pascal2.mk
+=======
+ifeq (pa_mint,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_mint.mk
+>>>>>>> 3bdcf5da23a87b13b3c0d66569419210bc7ce60c
 endif

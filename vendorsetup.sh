@@ -29,6 +29,10 @@ add_lunch_combo pa_p3113-userdebug
 add_lunch_combo pa_p3110-userdebug
 add_lunch_combo pa_p3100-userdebug
 add_lunch_combo pa_n7000-userdebug
+<<<<<<< HEAD
 add_lunch_combo pa_rk2918-userdebug
 add_lunch_combo pa_galaxysl-userdebug
 add_lunch_combo pa_pascal2-userdebug
+=======
+add_lunch_combo pa_mint-userdebug
+>>>>>>> 3bdcf5da23a87b13b3c0d66569419210bc7ce60c

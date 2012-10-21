@@ -7,6 +7,9 @@ OVERLAY_TARGET := pa_large-mdpi
 # include ParanoidAndroid common configuration
 include vendor/toiiki/config/pa_common.mk
 
+# Build paprefs from sources
+PREFS_FROM_SOURCE := true
+
 # Inherit CM device configuration
 $(call inherit-product, device/rockchip/rk2918/cm.mk)
 
