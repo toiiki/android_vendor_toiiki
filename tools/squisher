@@ -35,7 +35,7 @@ if [ ! -f "$OTAPACKAGE" ]; then
 	exit 1
 fi
 
-OPTICHARGER=$ANDROID_BUILD_TOP/vendor/pa/tools/opticharger
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/toiiki/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
@@ -66,15 +66,15 @@ $SED -i \
 	$REPACK/ota/system/build.prop
 
 # Delete ParanoidAndroid specific files
-if [ -f $ANDROID_BUILD_TOP/vendor/pa/tools/squisher.rm ]; then
-	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/pa/tools/squisher.rm`; do
+if [ -f $ANDROID_BUILD_TOP/vendor/toiiki/tools/squisher.rm ]; then
+	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/toiiki/tools/squisher.rm`; do
 		rm -f $REPACK/ota/$RM_FILE
 	done
 fi
 
 # Delete target product specific files
-if [ -f $ANDROID_BUILD_TOP/vendor/pa/tools/$TARGET_PRODUCT-squisher.rm ]; then
-	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/pa/tools/$TARGET_PRODUCT-squisher.rm`; do
+if [ -f $ANDROID_BUILD_TOP/vendor/toiiki/tools/$TARGET_PRODUCT-squisher.rm ]; then
+	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/toiiki/tools/$TARGET_PRODUCT-squisher.rm`; do
 		rm -f $REPACK/ota/$RM_FILE
 	done
 fi
