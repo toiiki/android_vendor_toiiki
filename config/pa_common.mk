@@ -14,7 +14,7 @@ PRODUCT_COPY_FILES += \
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)
     PRODUCT_COPY_FILES += \
-        vendor/pa/prebuilt/common/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk
+        vendor/toiiki/prebuilt/common/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk
 else
     # Build paprefs from sources
     PRODUCT_PACKAGES += \
@@ -65,15 +65,10 @@ PRODUCT_COPY_FILES += \
 CM_RELEASE := true
 CM_BUILD := $(BOARD)
 
-<<<<<<< HEAD
-PA_VERSION_MAJOR = 1
-PA_VERSION_MINOR = 0
-PA_VERSION_MAINTENANCE = 0
-=======
+
 PA_VERSION_MAJOR = 2
 PA_VERSION_MINOR = 2
 PA_VERSION_MAINTENANCE = 3
->>>>>>> 3bdcf5da23a87b13b3c0d66569419210bc7ce60c
 
 TARGET_CUSTOM_RELEASETOOL := vendor/toiiki/tools/squisher
 
